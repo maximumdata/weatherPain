@@ -1,0 +1,54 @@
+html, body
+  height: 100%
+
+body
+  background-image: url('bg.jpg')
+  background-size: cover
+  min-height: 100vh
+  position: relative
+
+footer
+  position: fixed
+  background: white
+  right: 0
+  bottom: 0
+  left: 0
+  height: 20px
+  font-size: 16px
+  line-height: 1
+  padding-top: 2px
+.loading
+  display: none
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background-color: rgba(255,255,255,.75)
+  text-align: center
+  .text
+    color: black
+    font-size: 30px
+    line-height: 1
+    margin-top: calc(50vh - 15px)
+.heading
+  margin-top: calc(50vh - 59px)
+
+main
+  display: none
+  margin-bottom: 20px
+  .results
+    display: none
+  .imageResults
+    display: none
+    #images
+      display: flex
+      align-items: center
+      justify-content: space-between
+      @media screen and (max-width: 991px)
+        flex-wrap: wrap
+        flex-direction: column
+        .imgResult
+          margin-bottom: 10px
+.center
+  text-align: center

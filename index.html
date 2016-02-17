@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Pain</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="search">
+  <div class="container">
+    <div class="row">
+      <div class="heading col-xs-12">
+        <h1>Weather Pain</h1>
+      </div>
+      <form>
+        <div class="form-group col-xs-9 col-sm-10">
+          <label for="search" class="sr-only">Zip Code</label>
+          <input tabindex=1 type="number" class="form-control" id="zip" placeholder="Zip Code">
+        </div>
+        <div class="col-xs-3 col-sm-2 center">
+          <button type="submit" class="btn btn-default">Search</button>
+        </div>
+      </form>
+      <div class="info col-xs-12">
+        Enter your zip code to find flickr pictures of your weather!
+      </div>
+    </div>
+  </div>
+</header>
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3 col-xs-12">
+        <div class="results">
+          <h3>Your weather is:</h3>
+          <img src="" id="icon"><span id="weatherResult"></span>
+        </div>
+      </div>
+      <div class="col-sm-9 col-xs-12">
+        <div class="imageResults">
+          <h3>Here's what this weather looks like to other people:</h3>
+          <div id="images"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        Uses data from <a href="http://openweathermap.org/">Open Weather Map</a> and <a href="http://www.flickr.com">Flickr</a>
+      </div>
+    </div>
+  </div>
+</footer>
+<div class="loading"><div class="text">Loading!</div></div>
+<script src="//code.jquery.com/jquery-2.2.0.min.js" charset="utf-8"></script>
+<script src="app.js"></script>
+</body>
+</html>
