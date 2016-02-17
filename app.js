@@ -25,7 +25,7 @@ function fadeItemsIn() {
 function getImages(weather) {
   var flickerAPI = "http://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
   $.getJSON( flickerAPI, {
-    tags: weather,
+    tags: weather+ ' weather',
     tagmode: "any",
     format: "json"
   })
